@@ -36,22 +36,24 @@ body {
     }
 }
 
-.videos {
-    display: flex;
-    flex-wrap: wrap;
+.gif{
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
 
-    &__item {
-        width: 200px;
-        margin: 10px;
-        transition: transform 0.3s ease;
-        box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.2);
+.img{
+    border-radius: 15px;
+    margin: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 0 16px 4px rgba(0, 0, 0, 0.2);
+}
 
-        &:hover {
-            transform: scale(1.02) rotate(3deg);
-        }
-        &:nth-child(odd):hover {
-            transform: scale(1.02) rotate(-3deg);
-        }
-    }
+.img:hover {
+    transform: scale(1.02) rotate(3deg);
+}
+
+.img:nth-child(odd):hover {
+    transform: scale(1.02) rotate(-3deg);
 }
 
